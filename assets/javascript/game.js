@@ -2,14 +2,20 @@ var letters = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","
     var wins = 0;
     var loses = 0; 
     var tries = 0;
+    var correctguess = "a";
 
 
-    for(i=0, i)
+    for(i=0, letters.length)
     document.onkeyup = function(event) {
 
 
    
-    if (userInput === letters) {
+    if (userInput === correctguess) {
+
+        alert("You won!")
+        document.getElementById("#wins1")
+
+        
 
 
 
