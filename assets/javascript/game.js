@@ -1,22 +1,28 @@
 
 
-var guess = prompt("Enter Guess Below");
-var answer = 4;
-var wins = document.getElementById("correct")
+var randomNumber = getRandomNumber;
+var guess;
+var count = 0;
+var correctGuess = false;
 
-alert.prompt("Guess a number between 1-10");
+function.getRandomNumber(upper){
 
-for(i=0; i<0; i++){
-    if(answer == guess){
-        alert("Good Job!")
-        wins++;
+    var number = Math.floor(math.random()* upper) + 1;
+    return number;
+}
 
+while(true){
+    guess = prompt("Guess a number between 1-10!"); 
+    count += 1; 
+    if(parseInt(guess) === randomNumber){
+        correctGuess = true; 
+        break;
     }
 
-
-
-
 }
+
+document.write('<h1>You Got It Right!</h1>')
+document.write('You tried ' + count + 'to get it right!')
 
 
 
